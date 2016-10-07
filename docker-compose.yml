@@ -5,7 +5,9 @@
 mongoprod:
   image: 'tutum/mongodb:latest'
   environment:
-    - MONGODB_PASS=mypass
+    - MONGODB_PASS=myPass
+    - MONGODB_USER=myUser
+    - MONGODB_DB=myDb
   ports:
     - "27017:27017"
     - "28017:28017"
